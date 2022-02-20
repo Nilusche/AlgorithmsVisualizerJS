@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="slider.css">
+</head>
+  
+<body>
+    <header>
+        <b>
+        Nilusche
+        </b>
+        <Nav>
+            <ul class="nav__links">
+                <li><a href="#">Sorting Algorithms</a></li>
+                <li><a href="#">Graph Algorithms</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </Nav>
+    </header>
+
+    <h2>Sorting Algorithms</h2>
+    <div class="buttoncontainer">
+        <button id="bubblesort">Bubblesort</button>
+        <button id="insertionsort">Insertionsort</button>
+        <button id="gnomesort">Gnomesort</button>
+        <button id="selectionsort">Selectionsort</button>
+        <button id="quicksort">Quicksort</button>
+        <button id="heapsort">Heapsort</button>
+        <button id="bogosort">Bogosort</button>
+        
+        <div style="text-align:  center;">
+            <label  id="speed" style="color:#eee">Slow down</label>
+             <Input class="range" type="range" value="300" min="30" max="1000" onChange="changespeed(this.value)" onmousemove="changespeed(this.value)"></Input>
+            <span id="rangevalue">0</span>
+        </div>
+        <button id="reset" onclick="window.location.reload();">Reset</button>
+        
+    </div>
+    
+    <div id="array">
+    </div>
+    
+    <div class="generatecontainer">
+        <button id="randomArray">Generate new Array</button>
+        <button class="none" id="sortedAsc">Set Values to sorted (ascending)</button>
+        <button class="none" id="sortedDesc">Set Values to sorted (descending)</button>
+    </div>
+
+
+
+    <script src="sorts.js"></script>
+    <script type="text/javascript">
+        let  rand= document.getElementById("randomArray");
+        let asc = document.getElementById("sortedAsc");
+        let desc = document.getElementById("sortedDesc");
+        rand.addEventListener("click", ()=>{
+            generatearray(1, false);
+            let buttons = document.querySelectorAll(".none");
+            buttons.forEach((e)=>{
+                e.style.display="block";
+            })
+        });
+        
+        asc.addEventListener("click", ()=>{
+            generatearray(2,true);
+        });
+        desc.addEventListener("click",()=>{
+            generatearray(2,false);  
+        });
+
+    </script>
+</body>
+  
+</html>

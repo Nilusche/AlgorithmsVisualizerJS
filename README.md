@@ -5,3 +5,4 @@ For me that was algorithms. <br>
 
 As of now only sorting algorithms are visualized.<br>
 Visualization of other algortithms like graph-algorithms will likely follow <br>
+https://nilusche.github.io/AlgorithmsVisualizerJS/

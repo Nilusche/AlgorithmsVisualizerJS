@@ -1,5 +1,5 @@
 # AlgorithmsVisualizerJS
-https://nilusche.github.io/AlgorithmsVisualizerJS/
+https://nilusche.github.io/AlgorithmsVisualizerJS/ <br>
 This is an algorithms and datastructures project to visualize sorting algorithms. <br>
 The purpose of this project was to learn javascript by using it in an already familiar field. <br>
 For me that field was algorithms. <br>

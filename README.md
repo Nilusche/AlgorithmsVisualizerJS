@@ -8,5 +8,6 @@ For me that field was algorithms. <br>
 As of now only sorting algorithms are visualized.<br>
 Visualization of other algortithms like graph-algorithms will likely follow. <br>
 
+This project has been created within my journey to learn javascript frameworks. <br>
 To visit my other Javascript-projects click the link below <br>
 https://github.com/Nilusche/RoadToVueJS

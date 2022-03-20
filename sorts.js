@@ -203,7 +203,12 @@ async function bubblesort(){
         items[items.length - i - 1].style.backgroundColor ="#95CD41";
     }
 }
-
+function isSorted() {
+    for(let i = 0; i < items.length - 1; i++) {
+        if (items[i].innerText > items[i + 1].innerText) return false;
+    }
+    return true;
+}
 async function bogosort(){
     items= document.querySelectorAll(".item");
     while(!isSorted()) {
@@ -222,13 +227,10 @@ async function bogosort(){
         items[a].style.backgroundColor = "#FF6464";
         items[b].style.backgroundColor = "#FF6464";
     }
-
-    function isSorted() {
-        for(let i = 0; i < items.length - 1; i++) {
-            if (items[i].innerText > items[i + 1].innerText) return false;
-        }
-        return true;
-    }
+    items.forEach((element)=>{
+        element.style.backgroundColor ="#95CD41";
+    })
+    
 }
 
 async function selectionsort(){

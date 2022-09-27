@@ -1,4 +1,9 @@
 # AlgorithmsVisualizerJS
+
+## Quick link to Software Requirements Specification
+[SRS](SortingAlgorithms_Software_Requirements_Specification.pdf)
+
+
 Page: https://nilusche.github.io/AlgorithmsVisualizerJS/ <br>
 This is an Algorithms-and-datastructures-project to visualize sorting algorithms. <br>
 The purpose of this project was to learn javascript with a project-based approach by combining it with an already familiar topic of mine. <br>
